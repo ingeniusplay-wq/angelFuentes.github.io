@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Angel Fuentes — Unity Game Developer</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- CANVAS PARTÍCULAS -->
+  <canvas id="particles"></canvas>
+
+  <!-- CURSOR PERSONALIZADO -->
+  <div id="cursor"></div>
+  <div id="cursor-trail"></div>
+
+  <!-- ==================
+       NAVEGACIÓN
+  =================== -->
+  <nav id="navbar">
+    <a href="#inicio" class="nav-logo">AF · GameDev</a>
+    <div class="nav-links">
+      <a href="#juegos">Juegos</a>
+      <a href="#skills">Skills</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- ==================
+       HERO
+  =================== -->
+  <section class="hero" id="inicio">
+    <div class="hero-inner">
+      <div class="hero-badge">Unity · Android · F2P</div>
+      <h1>Angel Fuentes</h1>
+      <p class="hero-subtitle">
+        <span id="typewriter"></span>
+        <span class="typewriter-cursor"></span>
+      </p>
+      <p class="hero-desc">
+        Desarrollador de videojuegos móviles especializado en Unity y C#, con experiencia
+        en el ciclo completo de desarrollo: diseño de mecánicas, monetización F2P
+        y optimización para Android.
+      </p>
+      <div class="hero-tags">
+        <span class="tag">Unity</span>
+        <span class="tag">C#</span>
+        <span class="tag">Android SDK</span>
+        <span class="tag">Firebase</span>
+        <span class="tag">Git</span>
+        <span class="tag">Monetización F2P</span>
+        <span class="tag">Game Loop Design</span>
+        <span class="tag">UI/UX móvil</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#juegos" class="btn-primary">Ver mis juegos</a>
+        <a href="#contacto" class="btn-outline">Contactar</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ==================
+       JUEGOS
+  =================== -->
+  <section class="games-section" id="juegos">
+    <p class="section-label reveal">Proyectos</p>
+    <h2 class="section-title reveal reveal-delay-1">Juegos desarrollados</h2>
+
+    <!-- NECROMANCER (destacado) -->
+    <div class="featured-game reveal reveal-delay-2">
+      <div>
+        <div class="featured-badge">Publicado en Google Play</div>
+        <h3>Necromancer</h3>
+        <p class="game-genre">Idle · Gestión · Android</p>
+        <p>
+          Juego idle 2D donde encarnas a un nigromante que lidera un ejército de esbirros
+          en 13 niveles con bosses, combate automático y economía dual (soft/hard currency).
+          Desarrollo 100% independiente.
+        </p>
+        <div class="game-tech">
+          <span class="tech-tag">Unity</span>
+          <span class="tech-tag">C#</span>
+          <span class="tech-tag">Android SDK</span>
+          <span class="tech-tag">Monetización F2P</span>
+          <span class="tech-tag">IAP</span>
+          <span class="tech-tag">Spin Wheel</span>
+          <span class="tech-tag">Game Loop Design</span>
+        </div>
+        <a
+          href="https://play.google.com/store/apps/details?id=com.IngeniusPlay.Necromancer"
+          class="btn-primary btn-sm"
+          target="_blank"
+        >Descargar en Google Play</a>
+      </div>
+
+      <!-- CARRUSEL NECROMANCER -->
+      <div class="carousel carousel-portrait" id="carousel-necromancer">
+        <div class="carousel-track"></div>
+        <button class="carousel-btn prev">&#8592;</button>
+        <button class="carousel-btn next">&#8594;</button>
+        <div class="carousel-dots"></div>
+      </div>
+    </div>
+
+    <!-- GRID DE PROYECTOS -->
+    <div class="games-grid">
+
+      <!-- JOHN GUNNER -->
+      <div class="game-card reveal reveal-delay-1">
+        <div class="carousel card-carousel" id="carousel-johngünner">
+          <div class="carousel-track"></div>
+          <button class="carousel-btn prev">&#8592;</button>
+          <button class="carousel-btn next">&#8594;</button>
+          <div class="carousel-dots"></div>
+        </div>
+        <div class="card-body">
+          <h4>John Gunner</h4>
+          <p class="game-genre" style="font-size:0.72rem; margin-bottom:0;">Plataformas 2D · Android</p>
+          <p class="card-desc">8 niveles con mecánica de gravedad modificada. Diseño completo de niveles, enemigos y UI móvil.</p>
+          <div class="game-tech">
+            <span class="tech-tag">Unity</span>
+            <span class="tech-tag">C#</span>
+            <span class="tech-tag">Android</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- SWORD REBIRTH -->
+      <div class="game-card reveal reveal-delay-2">
+        <div class="carousel card-carousel" id="carousel-swordrebirth">
+          <div class="carousel-track"></div>
+          <button class="carousel-btn prev">&#8592;</button>
+          <button class="carousel-btn next">&#8594;</button>
+          <div class="carousel-dots"></div>
+        </div>
+        <div class="card-body">
+          <h4>SwordRebirth</h4>
+          <p class="game-genre" style="font-size:0.72rem; margin-bottom:0;">Isométrico 16bits · Android</p>
+          <p class="card-desc">Aventura isométrica con oleadas de enemigos, sistema de login y guardado de progreso con Firebase.</p>
+          <div class="game-tech">
+            <span class="tech-tag">Unity</span>
+            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">Android</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RUNNER 2D -->
+      <div class="game-card reveal reveal-delay-3">
+        <div class="carousel card-carousel" id="carousel-runner">
+          <div class="carousel-track"></div>
+          <button class="carousel-btn prev">&#8592;</button>
+          <button class="carousel-btn next">&#8594;</button>
+          <div class="carousel-dots"></div>
+        </div>
+        <div class="card-body">
+          <h4>Runner 2D</h4>
+          <p class="game-genre" style="font-size:0.72rem; margin-bottom:0;">Endless Runner · Android</p>
+          <p class="card-desc">Mapa infinito con recogida de objetos, obstáculos y plataformas. Dificultad progresiva.</p>
+          <div class="game-tech">
+            <span class="tech-tag">Unity</span>
+            <span class="tech-tag">C#</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- TOWER DEFENSE -->
+      <div class="game-card reveal reveal-delay-1">
+        <div class="carousel card-carousel carousel-portrait" id="carousel-towerdefense">
+          <div class="carousel-track"></div>
+          <button class="carousel-btn prev">&#8592;</button>
+          <button class="carousel-btn next">&#8594;</button>
+          <div class="carousel-dots"></div>
+        </div>
+        <div class="card-body">
+          <h4>Tower Defense</h4>
+          <p class="game-genre" style="font-size:0.72rem; margin-bottom:0;">Demo técnica · PC</p>
+          <p class="card-desc">Sistema de oleadas, rutas predefinidas e IA de enemigos con pathfinding básico.</p>
+          <div class="game-tech">
+            <span class="tech-tag">Unity</span>
+            <span class="tech-tag">IA Enemigos</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- SHOOTER -->
+      <div class="game-card reveal reveal-delay-2">
+        <div class="carousel card-carousel" id="carousel-shooter">
+          <div class="carousel-track"></div>
+          <button class="carousel-btn prev">&#8592;</button>
+          <button class="carousel-btn next">&#8594;</button>
+          <div class="carousel-dots"></div>
+        </div>
+        <div class="card-body">
+          <h4>Shooter</h4>
+          <p class="game-genre" style="font-size:0.72rem; margin-bottom:0;">Demo técnica · PC</p>
+          <p class="card-desc">CharacterController, control de cámara, disparo por raycast e interacción física con el entorno.</p>
+          <div class="game-tech">
+            <span class="tech-tag">Unity</span>
+            <span class="tech-tag">Raycast</span>
+            <span class="tech-tag">Physics</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- TOWER BOX -->
+      <div class="game-card reveal reveal-delay-3">
+        <div class="carousel card-carousel" id="carousel-towerbox">
+          <div class="carousel-track"></div>
+          <button class="carousel-btn prev">&#8592;</button>
+          <button class="carousel-btn next">&#8594;</button>
+          <div class="carousel-dots"></div>
+        </div>
+        <div class="card-body">
+          <h4>Tower Box</h4>
+          <p class="game-genre" style="font-size:0.72rem; margin-bottom:0;">Habilidad · Android</p>
+          <p class="card-desc">Juego de precisión tap-to-stack con sistema de puntuación y récords por sesión.</p>
+          <div class="game-tech">
+            <span class="tech-tag">Unity</span>
+            <span class="tech-tag">C#</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ==================
+       SKILLS
+  =================== -->
+  <section class="skills-section" id="skills">
+    <p class="section-label reveal">Tecnologías</p>
+    <h2 class="section-title reveal reveal-delay-1">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-item reveal reveal-delay-1">Unity</div>
+      <div class="skill-item reveal reveal-delay-1">C#</div>
+      <div class="skill-item reveal reveal-delay-2">Android SDK</div>
+      <div class="skill-item reveal reveal-delay-2">Firebase</div>
+      <div class="skill-item reveal reveal-delay-2">Git</div>
+      <div class="skill-item reveal reveal-delay-3">GitHub</div>
+      <div class="skill-item reveal reveal-delay-3">Java</div>
+      <div class="skill-item reveal reveal-delay-3">Flutter</div>
+      <div class="skill-item reveal reveal-delay-1">F2P Design</div>
+      <div class="skill-item reveal reveal-delay-2">UI/UX móvil</div>
+      <div class="skill-item reveal reveal-delay-3">Game Loop</div>
+      <div class="skill-item reveal reveal-delay-3">Balanceo</div>
+      <div class="skill-item reveal reveal-delay-1">IA Generativa</div>
+      <div class="skill-item reveal reveal-delay-2">LLM APIs</div>
+      <div class="skill-item reveal reveal-delay-3">Prompt Engineering</div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ==================
+       SOBRE MÍ
+  =================== -->
+  <section class="about-section" id="sobre-mi">
+    <p class="section-label reveal">Bio</p>
+    <h2 class="section-title reveal reveal-delay-1">Sobre mí</h2>
+
+    <!-- Cambia src por tu foto: img/foto.jpg -->
+    <img
+      src="img/foto.jpg"
+      alt="Angel Fuentes"
+      class="about-photo reveal reveal-delay-2"
+      onerror="this.style.display='none'"
+    />
+
+    <p class="reveal reveal-delay-2">
+      Desarrollador de videojuegos móviles especializado en Unity y C#, con experiencia
+      en el ciclo completo de desarrollo: diseño de mecánicas, sistemas de monetización F2P,
+      balanceo y optimización para Android.
+    </p>
+    <p class="reveal reveal-delay-3">
+      Autor de Necromancer, juego idle 2D publicado en Google Play, donde desarrollé
+      de forma independiente el game loop, la economía dual (soft/hard currency),
+      sistemas de retention y la UI/UX para móvil.
+    </p>
+    <p class="reveal reveal-delay-4">
+      Formación en Desarrollo de Aplicaciones Multiplataforma (DAM) y experiencia
+      profesional en análisis de monetización en estudio. Busco incorporarme a un equipo
+      de desarrollo de videojuegos donde aportar y seguir creciendo como programador.
+    </p>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ==================
+       CONTACTO
+  =================== -->
+  <section class="contact-section" id="contacto">
+    <p class="section-label reveal">Contacto</p>
+    <h2 class="section-title reveal reveal-delay-1">¿Hablamos?</h2>
+    <p class="reveal reveal-delay-2">
+      Estoy buscando incorporarme a un equipo de desarrollo de videojuegos.
+      Si tienes un proyecto interesante o una oportunidad, escríbeme.
+    </p>
+    <div class="contact-links reveal reveal-delay-3">
+      <a href="mailto:Angeljavier46@gmail.com" class="btn-primary">Enviar email</a>
+      <a href="https://www.linkedin.com/in/angel-fuentes-1aa545313/" class="btn-outline" target="_blank">LinkedIn</a>
+      <a href="https://play.google.com/store/apps/details?id=com.IngeniusPlay.Necromancer" class="btn-outline" target="_blank">Google Play</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Angel Fuentes · Desarrollado con HTML, CSS y JS</p>
+  </footer>
+
+  <!-- JS AL FINAL -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
